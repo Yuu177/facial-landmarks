@@ -10,8 +10,7 @@ int main() {
   // 加载预测模型
   // ">>" 运算符是 dlib 库中的序列化操作符，
   // 它允许你在读取和写入二进制文件时对对象进行序列化和反序列化。
-  // 表示读取 "shape_predictor_68_face_landmarks.dat" 文件并反序列化到
-  // dlib::shape_predictor 对象 "sp"
+  // 读取 "landmarks.dat" 文件并反序列化到 dlib::shape_predictor 对象 "sp"
   dlib::deserialize("model/shape_predictor_68_face_landmarks.dat") >> sp;
 
   // 加载图像
